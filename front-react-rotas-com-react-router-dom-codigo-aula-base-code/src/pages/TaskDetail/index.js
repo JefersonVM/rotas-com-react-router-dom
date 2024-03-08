@@ -1,28 +1,30 @@
-import Logo from "../../assets/logo.png";
 import "./styles.css";
+import Header from "../../components/Header";
+import { useParams, Link } from "react-router-dom";
 
-function TaskDetail() {
+function TaskDetail({ allTasks }) {
+  const params = useParams();
+
+  const { name, description, owner } = allTasks.find(
+    (task) => task.id === parseInt(params.id)
+  );
+
   return (
     <main className="container-task-detail">
-      <header>
-        <img src={Logo} alt="logo" />
-      </header>
+      <Header />
 
       <div className="content-task-detail">
-        <h1>Estudar ReactJS</h1>
+        <h1>{name}</h1>
 
         <div>
           <strong>Description: </strong>
-          <p>
-            MinhaMinha descrição Minha descrição Minha descrição Minha descrição
-            descrição
-          </p>
+          <p>{description}</p>
         </div>
         <div>
           <strong>Author: </strong>
-          <span>Daniel Lopes</span>
+          <span>{owner}</span>
         </div>
-        <a href="#">Voltar</a>
+        <Link to="/">Voltar</Link>
       </div>
     </main>
   );

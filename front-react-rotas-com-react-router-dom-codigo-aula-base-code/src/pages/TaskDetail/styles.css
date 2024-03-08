@@ -9,20 +9,6 @@
   width: 100vw;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  width: 100vw;
-
-  background-color: #e5007b;
-}
-
-header img {
-  height: 48px;
-}
-
 .content-task-detail {
   display: flex;
   text-align: center;

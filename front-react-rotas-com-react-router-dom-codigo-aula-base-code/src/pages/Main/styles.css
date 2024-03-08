@@ -8,19 +8,7 @@ main {
   width: 100vw;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  width: 100vw;
 
-  background-color: #e5007b;
-}
-
-header img {
-  height: 48px;
-}
 
 hr {
   width: 100vw;
@@ -45,48 +33,3 @@ hr {
   padding: 0 64px;
 }
 
-.container-task {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  height: 240px;
-  width: 200px;
-  padding: 16px;
-
-  border: 1px solid lightgray;
-  border-radius: 7px;
-
-  cursor: pointer;
-
-  text-align: justify;
-
-  background-color: #313131;
-
-  color: white;
-  text-decoration: none;
-}
-
-.container-task:hover {
-  transform: scale(1.05);
-}
-
-.container-task hr {
-  width: 100%;
-}
-
-.container-task div {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 100%;
-}
-
-.container-task p {
-  white-space: nowrap;
-  width: 100%;
-  overflow: hidden;
-
-  text-overflow: ellipsis;
-}
